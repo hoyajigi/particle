@@ -1,0 +1,19 @@
+Particle simulation
+===================
+
+>> Description
+
+particle_c: serial C version
+particle_ocl: OpenCL version
+
+
+>> HOWTO
+
+$ cd <DIR>
+$ make
+$ time ./particle
+
+
+>> NOTE
+
+To shorten execution time, please modify the "MAX_IDX_PER_GRID" defined in particle.c.
