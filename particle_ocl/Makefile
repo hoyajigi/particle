@@ -1,11 +1,10 @@
 TARGET = particle
-OBJS   = particle.o
+OBJS   = particle.o cl_util.o timers.o
 
 CC       = g++
-INCLUDES = -I.
-CFLAGS   = -O2 -Wall $(INCLUDES) -DDEBUG
-LDFLAGS  = -lm
-
+INCLUDES = #-I/home/sc56/src/AMD_Samples/include/
+CFLAGS   = -std=c99 -O4 -Wall $(INCLUDES)
+LDFLAGS  = -lm -lOpenCL #-L/opt/AMDAPP/lib/x86_64
 
 all: $(TARGET)
 
